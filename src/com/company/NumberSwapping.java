@@ -23,7 +23,7 @@ public class NumberSwapping {
         System.out.println(i +" "+ j);*/
 
         //Method 4
-j=i+j-(i=j);
+        j=i+j-(i=j);
         System.out.println(i +" "+ j);
 
     }
