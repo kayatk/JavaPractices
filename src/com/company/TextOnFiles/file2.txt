@@ -1,0 +1,1 @@
+File 2 will copy the content from the File one and write it on the File2.Txt using the writeString() Method on the Files class. and Read the content using readString() Method.
