@@ -9,12 +9,12 @@ public class ReadfileWithScanner {
     public static void main(String []args) throws FileNotFoundException{
         File file = new File("src/com/company/TextOnFiles/file1.txt");
         Scanner sc = new Scanner(file);
-        while (sc.hasNextLine()) {
-            System.out.println(sc.nextLine());
+     //   while (sc.hasNextLine()) {
+     //       System.out.println(sc.nextLine());
             
-        }
+      //  }
 
-      //  sc.useDelimiter("\\Z");
-      //  sc.nextLine();
+        sc.useDelimiter("\\Z");
+       System.out.println(sc.next()); 
     }
 }
