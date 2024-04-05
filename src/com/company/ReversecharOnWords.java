@@ -22,6 +22,17 @@ public class ReversecharOnWords {
             }
             System.out.print(" ");
         }
+
+        //StringBuilder
+        String reverse="";
+        for (String st : words) {
+            StringBuilder sb = new StringBuilder(st);
+            reverse=reverse+sb.reverse().toString() + " ";
+        }
+        System.out.println(reverse);
+       
+        
+
     }
 
    public static void wordreverse(String x){
