@@ -9,10 +9,19 @@ public class ReversecharOnWords {
         System.out.println("Enter any sentance you want to reversse on each word");
         String sentance = sc.nextLine();
         String words[] = sentance.split(" ");
+
+        //tocharArray
         for (String word : words) {
             wordreverse(word);
         }
-        
+
+        //charAt
+        for (String str : words) {
+            for(int i =str.length()-1;i>=0;i--){
+                System.out.print(str.charAt(i));
+            }
+            System.out.print(" ");
+        }
     }
 
    public static void wordreverse(String x){
