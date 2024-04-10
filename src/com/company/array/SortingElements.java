@@ -27,9 +27,10 @@ public class SortingElements {
 
         // Print sorted array
         System.out.println("Sorted numbers:");
-        for (int number : numbers) {
+       /*  for (int number : numbers) {
             System.out.print(number + " ");
-        }
+        }*/
+        System.out.println(Arrays.toString(numbers));
 
         // Close the scanner
         scanner.close();
