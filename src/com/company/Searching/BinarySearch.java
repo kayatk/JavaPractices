@@ -8,16 +8,18 @@ public class BinarySearch {
     public static void main(String[] args) {
 
         int noArray[] = {3,65,89,100,43,56,33,76,2,55};
-       
-        //sort the Array
+        
+    //sort the Array
             Arrays.sort(noArray);
 
-        //Get Element from user to enter a value
+    //Get Element from user to enter a value
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter value to find: ");
         int element = scanner.nextInt();
 
-        //define lower and Higher value
+    //Approach #1
+    //By Writing logic manually
+    //define lower and Higher value
         int low= 0;
         int high=(noArray.length)-1;
         boolean flag =false;
@@ -40,5 +42,15 @@ public class BinarySearch {
         if(flag==false){
             System.out.println("Element Not Found");
         }
+
+    //Approach #2 with built in method
+
+     int index= Arrays.binarySearch(noArray, element);
+     if(index<0){
+       System.out.println("Element Not found"); 
+     }
+     else{
+        System.out.println("Element Found ..");
+     }
     }
 }
