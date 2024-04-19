@@ -1,5 +1,6 @@
 package com.company.array;
 
+import java.util.HashSet;
 
 public class FindDuplicates{
     public static void main(String[] args) {
@@ -9,9 +10,23 @@ public class FindDuplicates{
             for (int y = i + 1; y < a.length; y++) {
                 if (a[i] == a[y]) {
                     System.out.print(a[i] + " ");
-                    break; // Exit the inner loop once a duplicate is found
+                   // System.out.println("Duplicate element found" +a[i]);
+                    break; 
                 }
             }
+        }
+
+        //using Hash Set 
+        HashSet <Integer> hash = new HashSet();
+        boolean flag =false;
+        for (int i : a) {
+            if(hash.add(i)==false){
+                System.out.println("Duplicate element found: " +i);
+                flag=true;
+            }
+        }
+        if (flag==false){
+            System.out.println("No Duplicates element found");
         }
     }
 }
