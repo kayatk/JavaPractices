@@ -22,19 +22,19 @@ public class MaxMinArray {
                 System.out.println("Maximum of the element is "+max);
 
                 //Minimum
-                int min=1000;
-                for(int y=0;y<4;y++){
+                int min=elements[0];
+                for(int y=1;y<4;y++){
                     if (min>elements[y]){
                         min=elements[y];
                     }
                 }
                 System.out.println("Minimum of the element is "+min);
 
-       /*   //Approach #2
+         //Approach #2
                     Arrays.sort(elements);
                     System.out.println("Minimum :" +elements[0]);
                     System.out.println("Maximum :" +elements[elements.length-1]);
-*/
+
 
         //Approach #3
                 int temp;
